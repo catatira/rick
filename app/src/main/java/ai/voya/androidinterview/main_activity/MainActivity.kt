@@ -1,5 +1,6 @@
 package ai.voya.androidinterview.main_activity
 
+import ai.voya.androidinterview.AppNavigation
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -14,13 +15,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             hiltViewModel<MainActivityViewModel>()
-            MainScreen()
+            AppNavigation()
         }
     }
-
-    @Composable
-    fun MainScreen() {
-        // TODO Add and configure views here
-    }
-
 }

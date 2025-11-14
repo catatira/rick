@@ -89,6 +89,10 @@ dependencies {
     // Coil
     implementation("io.coil-kt:coil-compose:$coil_compose")
 
+    // Turbine
+    testImplementation 'app.cash.turbine:turbine:1.2.1'
+    testImplementation "io.mockk:mockk-android:1.13.5"
+
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinx_coroutines_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinx_coroutines_version"
 }
